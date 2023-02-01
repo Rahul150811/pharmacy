@@ -1,0 +1,227 @@
+/*-------------------------------------------------------------------------------------- */
+
+header {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  height: 63px;
+  line-height: 63px;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 0px 0px green;
+  box-shadow: 0px 1px 0px 0px red;
+}
+header img {
+  vertical-align: middle;
+  width:50px;
+  height: 50px;
+}
+
+header nav {
+  float: right;
+}
+header li {
+  display: inline-block;
+}
+header li.active a {
+  background-color: #0ce642;
+  position: relative;
+  border-radius: 5px;
+  color: rgb(201, 26, 26);
+}
+header li a {
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: green;
+}
+header li a:hover {
+  background-color: #f0bb0e;
+  position: relative;
+  border-radius: 5px;
+}
+header li + li {
+  margin-left: 8px;
+}
+/*-------------------------------------------------------------------------------------- */
+
+/*-------------------------------------------------------------------------------------- */
+  /*---------------------- Home Section Starts ----------------*/
+
+.welcome img{
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    width: 100%;
+    height: 900px;
+}
+
+.welcome h1{
+    width: 80%;
+    text-align: center;
+    color: red;;
+    font-weight: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#appointment{
+    background-color: #f85800;
+    text-align: center;
+    color: white;
+    font-weight: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    border: 2px solid #f85800;
+    transform: translate(-50%, -50%);
+  }
+
+
+/*---------------------- Home Section End ----------------*/
+
+/*---------------------- Service Section Starts ----------------*/
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09) !important;
+    box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09) !important;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.bg-white {
+    background-color: #fff !important;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.d-block {
+    display: block !important;
+}
+img, figure {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.card-text {
+    padding-top: 12px;
+    color: #8c8c8c;
+}
+
+.text-sm {
+    font-size: 12px !important;
+}
+p, .p {
+    margin: 0 0 16px;
+}
+
+.card-title {
+    margin: 0;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.pt-1, .py-1 {
+    padding-top: .25rem !important;
+}
+
+.head-icon{
+    margin-top:18px;
+    color:#FF4500
+}
+/*---------------------- Service Section Ends ----------------*/
+
+.description-section {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    overflow-x: hidden;
+    height: auto;
+    background: url("../images/background2.jpg") 50% 0 no-repeat fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -ms-behavior: url(../js/backgroundsize.htc);
+    z-index: -1;
+    position: relative;
+  }
+  .description-section:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/texture.png");
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .description-section:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 162, 227, 0.65);
+    display: block;
+  }
+  .description-section h1 {
+    margin-bottom: 80px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    z-index: 2;
+  }
+  .description-section h1:after {
+    position: absolute;
+    content: "";
+    top: 73px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+  }

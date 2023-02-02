@@ -22,16 +22,14 @@
   <body>
     <header>
       <div class="container">
-        <a href="#subheader" class="logo left"><img src="drugstore.png" alt="">Laguardia Pharmacy</a>
+        <a href="#" class="logo left"><img src="drugstore.png" alt=""></a><b style="font-family: Aref Ruqaa Ink; font-size:25px; width: 30px; text-decoration: none; color: orangered;">Laguardia Pharmacy</b>
         <nav>
           <ul>
             <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#doctors">DOCTORS</a> </li>
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#features">FEATURES</a></li>
-            <li><a href="#clinic">GALLERY</a></li>
             <li><a href="#appointment-link">APPOINTMENT</a></li>
-            <li><a href="#map">CONTACT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -41,8 +39,8 @@
     <section class="welcome">
       <img src="bg.jpg">
       <div>
-        <h1 style="font-size: 4vw;">Welcome to Laguardia Pharmacy</h1>
-        <a style="font-size: 1vw;" class="btn btn-primary btn-lg" id="appointment" href="#" role="button" type="button">MAKE AN APPONTMENT</a>
+        <h1 style="font-size: 5vw;">Welcome to Laguardia Pharmacy</h1>
+        <a style="font-size: 1vw;" class="btn btn-primary btn-lg" id="appointment" href="#appointment-link" role="button" type="button">MAKE AN APPONTMENT</a>
       </div>
     </section>
     <!-------------------------------- Home Section End ---------------------------------------------------->
@@ -189,36 +187,18 @@
       </div>
     </section>
     <!-------------------------------- Service Section End ---------------------------------------------------->
-    <section id="description" class="description-section">
-      <div class="container">
-        <h1>WHAT YOU SAY</h1>
-        <ul class="rslides">
-          <li>
-            <div class="center">
-              <p>" I can't say enough about how good you all are. You can build a state of the art medical facility anywhere, but the people working in this building cannot be found just anywhere. Thank you for making us feel comfortable during all the time! "</p>
-              <small>John Smith, California</small>
-            </div>
-          </li>
-          <li>
-            <div class="center">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, tempora, reprehenderit delectus soluta incidunt perspiciatis animi repellat excepturi provident officia doloremque atque dolorem nobis deleniti eveniet laborum porro voluptatum magnam!"</p>
-              <small>Enrico Lopez, Brasil</small>
-            </div>
-          </li>
-          <li>
-            <div class="center">
-              <p>"Minus, ad, officia, eius non quisquam totam odio aliquam fuga sit beatae iste enim obcaecati earum nisi hic itaque asperiores a sint aspernatur rerum quae quo provident ab pariatur qui quam ipsum laboriosam. Dignissimos, voluptate neque unde earum consequuntur eaque maiores autem quo!"</p>
-              <small>Victoria Rose, Canada</small>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-------------------------------- Features Section Starts ---------------------------------------------------->
-    <div class="feature">
-      <h1 class="display-4 text-center">Special Features for our Customers</h1>
+    <!-------------------------------- Sample Section Start----------------------------->
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+      <h1>We carry Halal Vitamins also </h1>
     </div>
+    <!--------------------------------- Sample Section End ----------------------------------->
+    
+    <!-------------------------------- Features Section Starts ---------------------------------------------------->
     <div class="container py-5 my-5" id="features">
+      <h1 class="h3 block-title text-center" style="font-size: 50px;
+      margin-top: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgb(248, 99, 19);">Special Features for our Customers</h1>
       <section class="p-md-3 mx-md-5">
         <div class="row mb-5 d-flex align-items-center">
           <div class="col-lg-6 col-md-6">
@@ -414,62 +394,114 @@
           <option>6. Notary</option>
         </select>
       </div>
-  
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="form2">
-            <span>Full Name *</span>
-            <label for="customername"></label>
-            <input type="fullname" class="form-control" id="fullname" placeholder="Your Name" required>
+      <form id="form" target="_self" onsubmit="" action="">
+        <div class="row">
+          <div class="col-sm-6">
+            <fieldset>
+              <div class="form2">
+                <span>Full Name *</span>
+                <label for="customername"></label>
+                <input type="fullname" class="form-control" id="fullname" placeholder="Your Name" required>
+              </div>
+            </fieldset>
+        
+            <fieldset>
+              <div class="form3">
+                <span>Email</span>
+                <label for="inputemail"></label>
+                <input type="email" class="form-control" id="inputemail" placeholder="Your Email">
+              </div>
+            </fieldset>
+             
+            <fieldset>
+              <div class="form4">
+                <span>Phone Number *</span>
+                <label for="inputphone"></label>
+                <input type="phone" class="form-control" id="inputphone" placeholder="Your Phone">
+              </div>
+            </fieldset>
+            <hr>
           </div>
-      
-          <div class="form3">
-            <span>Email</span>
-            <label for="inputemail"></label>
-            <input type="email" class="form-control" id="inputemail" placeholder="Your Email">
+          <div class="col-sm-6 appointdate">
+            <p>Appointment Date :</p> 
+            <fieldset>
+              <div class="appointmentdate1">
+                <label for="datepicer">1st Choice:</label>
+                <div class="form-group"> <input class="form-control" type="date" required>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <div class="appointmentdate2">
+                <label for="datepicer">2nd Choice:</label>
+                <div class="form-group"> <input class="form-control" type="date" required>
+              </div>
+            </div>
+            </fieldset>
+        </div>
+        
+        <fieldset>
+          <div class="messagebox">
+            <textarea class="form-control" type="textarea" id="message" name="messgae" placeholder="Message" maxlength="140" rows="7"></textarea>
           </div>
-           
-          <div class="form4">
-            <span>Phone Number *</span>
-            <label for="inputphone"></label>
-            <input type="phone" class="form-control" id="inputphone" placeholder="Your Phone">
+        </fieldset>
+        <div class="bottompart">
+          <div class="checkbox">
+            <label><input type="checkbox">Terms &amp; conditions</label>
           </div>
+          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn">Cancel</button>
           <hr>
         </div>
-        <div class="col-sm-6 appointdate">
-          <p>Appointment Date :</p> 
-          <div class="appointmentdate1">
-            <label for="datepicer">1st Choice:</label>
-            <div class="form-group"> <input class="form-control" type="date" required>
-            </div>
-          </div>
-          <div class="appointmentdate2">
-            <label for="datepicer">2nd Choice:</label>
-            <div class="form-group"> <input class="form-control" type="date" required>
-          </div>
-        </div>
+        
       </div>
-      
-      <div class="messagebox">
-        <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-      </div>
-      <div class="bottompart">
-        <div class="checkbox">
-          <label><input type="checkbox">Terms &amp; conditions</label>
-        </div>
-        <button type="submit" class="btn">Submit</button>
-        <button type="submit" class="btn">Cancel</button>
-        <hr>
-      </div>
-      
-    </div>   
+      </form>
+         
     </div> 
     <!-------------------------------- Appointment Section End ---------------------------------------------------->
 
     <!-------------------------------- Map Section Start ---------------------------------------------------->
-    <div style="margin-top: 10%;">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3022.0241394132167!2d-73.8675434!3d40.7614938!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1675354356278!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="contact">
+      <div class="heading-contact">
+        <h1 style="color:rgb(13, 154, 205); text-align: center; margin-top: 100px; font-size: 50px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact us</h1>
+      </div>
+      <section class="contact" style="width:95%">
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="contact-detail-box">
+              <i class="fa fa-th fa-3x text-colored" style="color:orange"></i>
+              <h4 style="margin-top: 10px; color:rgb(9, 117, 250)">Get In Touch</h4>
+              <abbr title="Phone">Phone:</abbr> 347-649-0996<br>718-478-2576<br>718-476-5660<br>
+              E-mail: <a href="mailto:laguardiapharmacy101@gmail.com" class="text-muted">laguardiapharmacy101@gmail.com</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="contact-detail-box">
+              <i class="fa fa-book fa-3x text-colored" style="color:orange"></i>
+              <h4 style="margin-top: 10px; color:rgb(9, 117, 250)">Fax</h4>
+              718-478-2142
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="contact-detail-box">
+              <i class="fa fa-map-marker fa-3x text-colored" style="color:orange"></i>
+              <h4 style="margin-top: 10px; color:rgb(9, 117, 250)">Our Location</h4>
+  
+              <address>
+              101-22 Astoria Boulevard, East Elmhurst<br>
+              Queens, NY 11369
+            </address>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div style="margin-top: 5%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.024140353152!2d-73.86973208511344!3d40.76149377932654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f94e5090219%3A0x71af9b53f0e41172!2sLaguardia%20Pharmacy!5e0!3m2!1sen!2sus!4v1675360662289!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
+    
+    
     <!-------------------------------- Map Section End ---------------------------------------------------->
 
     <!-------------------------------- Footer Section Start ---------------------------------------------------->
@@ -488,5 +520,36 @@
         </footer>
     </div>
     <!-------------------------------- Footer Section End ---------------------------------------------------->
+    <script type="text/javascript">
+      function postToGoogle() {
+          var field1 = $("input[type='fullname'][placeholder='Your Name']:checked").val();
+          var field2 = $("input[type='email'][placeholder='Your Email']:checked").val();
+          var field3 = $("input[type='phone'][placeholder='Your Phone']:checked").val();
+          var field4 = $('#message').val();
+
+          $.ajax({
+              url: "https://docs.google.com/forms/d/FORM_KEY/formResponse",
+              data: {"entry.1023121230": field3, "entry.1230072460": field1, "entry.2113237615": field2},
+              type: "POST",
+              dataType: "xml",
+              statusCode: {
+                  0: function() {
+                      //Success message
+                  },
+                  200: function() {
+                      //Success Message
+                  }
+              }
+          });
+      }
+       
+      $(document).ready(function(){
+          $('#form').submit(function() {
+              postToGoogle();
+              return false;
+          });
+      });
+  </script>
+  <script src="calender.js"></script>
   </body>
 </html>

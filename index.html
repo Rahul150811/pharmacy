@@ -526,10 +526,51 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.024140353152!2d-73.86973208511344!3d40.76149377932654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f94e5090219%3A0x71af9b53f0e41172!2sLaguardia%20Pharmacy!5e0!3m2!1sen!2sus!4v1675360662289!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    
-    
     <!-------------------------------- Map Section End ---------------------------------------------------->
 
+    <!------------------------------- Privacy Policy Code --------------------------------------->
+    <section>
+      <button id="privacy-policy-button">Show Privacy Policy </button>
+    <div id="privacy-policy-dialog" style="display:none;" class="privacypolicy">
+      <h2>Privacy Policy</h2>
+      <p>This Privacy Policy outlines how Laguardia Pharmacy (“we”, “us”, or “our”) collects, uses, and protects the personal information of users of our website, located at https://hirahul.info/pharmacy.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We collect personal information from users when they create an account, place an order, or subscribe to our newsletter. The types of personal information we collect may include name, address, email address, phone number, and payment information.
+        We use this information to provide our services, process orders, send order confirmations and shipping information, respond to customer inquiries, and improve the overall user experience.
+      </p>
+      <h3>Information Sharing and Disclosure</h3>
+      <p>We may share your personal information with third-party service providers to fulfill orders, process payments, and provide customer support. These service providers are subject to strict confidentiality agreements and are only allowed to use your information to perform services on our behalf.
+        We may also share your personal information as required by law, such as in response to a court order or subpoena.
+      </p>
+      <h3>Data Retention</h3>
+      <p>We retain personal information for as long as necessary to fulfill the purpose for which it was collected, or as required by law.
+      </p>
+      <h3>Security</h3>
+      <p>We take reasonable measures to protect the security of personal information, including encryption of sensitive information during transmission and secure storage of information. However, no data transmission over the internet or data storage system can be guaranteed to be 100% secure.
+      </p>
+      <h3>Changes to this Privacy Policy</h3>
+      <p>We reserve the right to modify this Privacy Policy at any time. If we make changes to this Privacy Policy, we will update the date at the top of this page and post a notification on our website. Your continued use of our website constitutes your acceptance of any changes to this Privacy Policy.
+      </p>
+      <h3>Contact Us</h3>
+      <p>If you have any questions or concerns about this Privacy Policy, please contact us at 101astoriapharmacy@gmail.com. 
+
+        This Privacy Policy was last updated on January 2023.</p>
+    </div>
+    <script>
+      let privacyPolicyDialogShowing = false;
+      document.getElementById("privacy-policy-button").addEventListener("click", function() {
+        if (privacyPolicyDialogShowing) {
+          document.getElementById("privacy-policy-dialog").style.display = "none";
+          privacyPolicyDialogShowing = false;
+        } else {
+          document.getElementById("privacy-policy-dialog").style.display = "block";
+          privacyPolicyDialogShowing = true;
+        }
+      });
+    </script>
+    </section>
+
+    <!------------------------------- Privcay Policy Code End ----------------------------------->
     <!-------------------------------- Footer Section Start ---------------------------------------------------->
     <div class="footer-basic">
         <footer>
@@ -537,12 +578,12 @@
             <div class="social"><a href="#"><img src="2.png"></a><a href="maito:laguardiapharmacy101@gmail.com"><img src="gmail.png"></a><a href="#"><img src="map.png"></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">Features</a></li>
-                <li class="list-inline-item"><a href="#">Appointment</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#services">Services</a></li>
+                <li class="list-inline-item"><a href="#features">Features</a></li>
+                <li class="list-inline-item"><a href="#appointment-link">Appointment</a></li>
+                <li class="list-inline-item"><a href="#contact">Contact</a></li>
             </ul>
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">Copyright @2023</div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; 2023 Laguardia Pharmacy. All rights reserved.</div>
         </footer>
     </div>
     <!-------------------------------- Footer Section End ---------------------------------------------------->

@@ -331,15 +331,14 @@ p, label, checkbox {
   background: #ffac0c;
   margin-top: 60px;
   }
-  .holiday-notice{
-    margin: 50px;
-    font-size: 100px;
-    color: black;
+.holiday-notice{
+  margin: 20px;
+  color: black;
   }
   .business-hours {
   background: #222; 
   padding: 40px 14px;
-  margin-top: -160px;
+  margin-top: -100px;
   position: relative;
   }
   .business-hours:before{
@@ -372,3 +371,15 @@ p, label, checkbox {
   color: #ffac0c; 
   }
   /*------------------- Store Hours End ------------------*/
+
+  .privacypolicy{
+    width: 80%;
+    margin-left: 10%;
+    border: 2px solid black;
+  }
+  .privacypolicy h3, h2{
+    text-align: center;
+  }
+  .privacypolicy p{
+    color:#888
+  }
